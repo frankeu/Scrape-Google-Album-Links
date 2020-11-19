@@ -7,7 +7,6 @@ function getAlbum($album){
     $getAlbum = get($album);
     preg_match_all('/;" href="\.(.*?)"><img class="/',$getAlbum,$videos);
     foreach($videos[1] as $k => $video){
-        // return md5($video);
         if(file_exists('./cache/'.md5($video).'.c')){
             $result[] = json_decode(file_get_contents('./cache/'.md5($video).'.c'),true);
         }else{
@@ -26,7 +25,6 @@ function getAlbum($album){
         }
     }
     return json_encode($result,JSON_PRETTY_PRINT);
-    // return $result;
 }
 
 function getTitle($url,$one,$two){
