@@ -1,0 +1,1 @@
+{"judul":"black-47-black-47-2018.mp4","link":"https:\/\/photos.google.com\/share\/AF1QipM4hzKPx9QNxXrUJRUrcJA1JTRPE6Su55gZtbwkWx2ldXsUBiy1dddpo3HKavSuTQ\/photo\/AF1QipPsXGOZ4wJ1NawFGkSGdOuZcUGFB58hT8ioze7f?key=NWlsSFdTdXJTcDZCSGxOMDIxNTFyaHd0RnhyS3lR"}
