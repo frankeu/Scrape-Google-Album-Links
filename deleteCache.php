@@ -1,9 +1,10 @@
 <?php
-$day = 1; // jumlah masa aktif cacke
+$day = 1; // masa aktif cache
 foreach(glob('./cache/*.c') as $cache){
-    if((time()-filectime($cache)) < $day*86400){
+    if((time()-filectime($cache)) > $day*86400){
         unlink($cache);
-        echo $cache. " => Deleted".PHP_EOL;
+        echo $cache. " => Expired".PHP_EOL;
+    }else{
+        echo $cache. " => Valid".PHP_EOL;
     }
 }
-echo PHP_EOL . "All caches that are older than 1 day have been deleted";
